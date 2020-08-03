@@ -4,10 +4,20 @@
   margin: 2em;
 }
 
+i {
+  color: rgb(116, 116, 116);
+}
+
+i:hover {
+  color: rgb(185, 185, 185);
+  transition: all 0.1s linear;
+  cursor: pointer;
+}
+
 .kila {
   width: 145px;
   height: 60px;
-  margin-left: 1em;
+  margin-left: 1.1em;
 }
 
 .sapal {
