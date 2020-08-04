@@ -1,5 +1,6 @@
 import React from "react"
 import "../styles/App.scss"
+import { Link } from "@reach/router"
 import sapal from "../static/sapal.png"
 import kila from "../static/kila.png"
 
@@ -14,10 +15,14 @@ const Img = ({ source, styling }) => {
 const Header = () => {
   return (
     <div className="header">
-      <span>
-        <i className="fas fa-bars fa-2x"></i>
-        <Img styling={"kila"} source={{ src: kila, alt: "kila" }} />
-      </span>
+      <div>
+        <span className="hamburger">
+          <i className="fas fa-bars fa-2x"></i>
+        </span>
+        <Link to="/">
+          <Img styling={"kila"} source={{ src: kila, alt: "kila" }} />
+        </Link>
+      </div>
       <Img styling={"sapal"} source={{ src: sapal, alt: "sapal" }} />
     </div>
   )
