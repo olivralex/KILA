@@ -1,12 +1,15 @@
 .header {
+  background-color: #fff;
   display: flex;
+  z-index: 3;
+  height: auto;
+  overflow: hidden;
   justify-content: space-between;
-  margin: 2em;
+  padding: 16px;
 }
 
 .hamburger {
   margin-top: 1.1em;
-  display: inline;
   float: left;
 }
 
@@ -30,4 +33,15 @@ i:hover {
   width: 145px;
   height: 70px;
   margin-right: 2em;
+}
+
+// Sticky header styling
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .header {
+  padding: 60px;
 }

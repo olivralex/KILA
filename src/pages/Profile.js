@@ -5,6 +5,7 @@ import profile from "../static/construction.jpg"
 //Components
 import Header from "../components/Header.jsx"
 import Footer from "../components/Footer.jsx"
+import ChartOne from "../components/ChartOne.jsx"
 
 const ProfileImg = () => {
   return (
@@ -57,9 +58,12 @@ const Profile = () => {
   return (
     <>
       <Header />
+      {/* Inicio del perfil | Datos Iniciales */}
       <h1>Nombre de la Empresa | Nombre de la Obra</h1>
       <ProfileImg />
       <ProfileBox />
+      {/* Primer Gráfica */}
+      <ChartOne />
       <Footer />
     </>
   )

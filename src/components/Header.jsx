@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect } from "react"
 import "../styles/App.scss"
 import { Link } from "@reach/router"
 import sapal from "../static/sapal.png"
@@ -13,6 +13,24 @@ const Img = ({ source, styling }) => {
 }
 
 const Header = () => {
+  useEffect(() => {
+    // Sticky Header Event
+    window.onscroll = () => {
+      getSticky()
+    }
+
+    let header = document.querySelector(".header")
+    let sticky = header.offsetTop
+
+    function getSticky() {
+      if (window.pageYOffset >= sticky) {
+        header.classList.add("sticky")
+      } else {
+        header.classList.remove("sticky")
+      }
+    }
+  }, [])
+
   return (
     <div className="header">
       <div>
