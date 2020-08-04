@@ -1,6 +1,8 @@
 // Layout (Navbar, Sidebar, Header, etc.)
 @import "./layout/header";
+// Components (Button, Cars, Textarea, etc.)
 @import "./components/search";
+@import "./components/card";
 
 body {
   font-family: Arial, sans-serif;
