@@ -5,12 +5,14 @@ import "./styles/App.scss"
 // Pages
 import Form from "./pages/Form"
 import Home from "./pages/Home"
+import Profile from "./pages/Profile"
 
 const App = () => {
   return (
     <div>
       <Router>
         <Home path="/" />
+        <Profile path="perfil" />
       </Router>
     </div>
   )
