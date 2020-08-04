@@ -18,7 +18,7 @@ const ProfileBox = () => {
   return (
     <div className="box">
       <div className="category-1">
-        <p>
+        <p className="category-mobile">
           Supervisor: <span>Joaquín Gutierrez Ortega</span>
         </p>
         <p>
@@ -38,7 +38,7 @@ const ProfileBox = () => {
           Número de Contrato: <span>15432</span>
         </p>
         <p>
-          Indice de Cumplimiento: <span>1</span>
+          Indice de Cumplimiento: <span>2</span>
         </p>
       </div>
       <div className="category-4">
