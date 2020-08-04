@@ -6,34 +6,36 @@ import Chart from "chart.js"
 const ChartOne = () => {
   useEffect(() => {
     let ctx = document.getElementById("myChart")
+    ctx.height = 110
+    ctx.width = 160
     let myChart = new Chart(ctx, {
       type: "bar",
       data: {
         labels: [
-          "Blue",
-          "Blue",
-          "Blue",
-          "Blue",
-          "Blue",
-          "Blue",
-          "Blue",
-          "Blue",
-          "Blue",
+          "Registro de Personal de IMSS",
+          "Verificación Médica incluido COVID",
+          "Equipo de protección personal",
+          "Certificados DC3 en actividades",
+          "Calidad de la maquinaria y herramienta",
+          "Uso adecuado",
+          "Mantenimiento",
+          "Limpieza y Orden",
+          "Procesos Constructivos",
         ],
         datasets: [
           {
-            label: "# of Votes",
-            data: [8, 8, 4, 4, 0, 0, 4, 8, 4],
+            label: "Campos",
+            data: [80, 80, 40, 40, 0, 0, 40, 80, 100],
             backgroundColor: [
-              "rgba(71, 164, 207, 0.75)",
-              "rgba(71, 164, 207, 0.75)",
-              "rgba(71, 164, 207, 0.75)",
-              "rgba(71, 164, 207, 0.75)",
-              "rgba(71, 164, 207, 0.75)",
-              "rgba(71, 164, 207, 0.75)",
-              "rgba(71, 164, 207, 0.75)",
-              "rgba(71, 164, 207, 0.75)",
-              "rgba(71, 164, 207, 0.75)",
+              "rgba(71, 164, 207, 0.85)",
+              "rgba(71, 164, 207, 0.85)",
+              "rgba(71, 164, 207, 0.85)",
+              "rgba(71, 164, 207, 0.85)",
+              "rgba(71, 164, 207, 0.85)",
+              "rgba(71, 164, 207, 0.85)",
+              "rgba(71, 164, 207, 0.85)",
+              "rgba(71, 164, 207, 0.85)",
+              "rgba(71, 164, 207, 0.85)",
             ],
             borderColor: [
               "rgba(38, 138, 192, 1)",
@@ -51,10 +53,20 @@ const ChartOne = () => {
         ],
       },
       options: {
+        legend: {
+          labels: {
+            fontColor: "black",
+            fontFamily: "Arial, sans-serif",
+          },
+        },
         scales: {
           yAxes: [
             {
               ticks: {
+                //Incluye el simbolo del porcentaje
+                callback: function (value, index, values) {
+                  return value + "%"
+                },
                 beginAtZero: true,
               },
             },
@@ -66,9 +78,13 @@ const ChartOne = () => {
 
   return (
     <div>
-      <h1 className="chart-title">Cumplimiento Semanal por Factores</h1>
+      <h3 className="chart-title">Cumplimiento Semanal por Factores</h3>
       <div className="chart-container">
-        <canvas id="myChart" width="50" height="50"></canvas>
+        <div className="buttons">
+          <button>Notas de Cumplimiento</button>
+          <button>Notas de Incumplimiento</button>
+        </div>
+        <canvas id="myChart"></canvas>
       </div>
     </div>
   )

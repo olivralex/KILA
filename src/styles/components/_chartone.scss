@@ -1,14 +1,32 @@
+@import "../abstracts/variables";
+
+.buttons {
+  margin-top: 1em;
+  transform: translateX(5em);
+
+  & > button {
+    width: 9em;
+    height: 5.25em;
+    font-size: 0.85rem;
+    margin: 1em;
+    cursor: pointer;
+  }
+}
+
 .chart-title {
   display: flex;
   justify-content: center;
+  margin-top: 3.5em;
+  font-size: 1.35em;
+  color: $titles-gray;
 }
 
 .chart-container {
   display: flex;
-}
-
-canvas {
-  display: flex;
+  text-align: center;
   justify-content: center;
+  position: relative;
+  height: 30vh;
+  width: 65vw;
   margin-top: 1em;
 }
