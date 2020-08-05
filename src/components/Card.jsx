@@ -14,15 +14,15 @@ const Card = () => {
           </div>
           <div className="card-content">
             <span className="card-title activator grey-text text-darken-4">
-              Card Title<i className="material-icons right">more_vert</i>
+              Obra<i className="material-icons right">more_vert</i>
             </span>
             <p>
-              <Link to="/perfil/">This is a link</Link>
+              <Link to="/perfil/">Ver mas &rarr;</Link>
             </p>
           </div>
           <div className="card-reveal">
             <span className="card-title grey-text text-darken-4">
-              Card Title<i className="material-icons right">close</i>
+              Obra<i className="material-icons right">close</i>
             </span>
             <p>
               Here is some more information about this product that is only
@@ -37,15 +37,15 @@ const Card = () => {
           </div>
           <div className="card-content">
             <span className="card-title activator grey-text text-darken-4">
-              Card Title<i className="material-icons right">more_vert</i>
+              Obra<i className="material-icons right">more_vert</i>
             </span>
             <p>
-              <Link to="/perfil/">This is a link</Link>
+              <Link to="/perfil/">Ver mas &rarr;</Link>
             </p>
           </div>
           <div className="card-reveal">
             <span className="card-title grey-text text-darken-4">
-              Card Title<i className="material-icons right">close</i>
+              Obra<i className="material-icons right">close</i>
             </span>
             <p>
               Here is some more information about this product that is only
@@ -60,15 +60,15 @@ const Card = () => {
           </div>
           <div className="card-content">
             <span className="card-title activator grey-text text-darken-4">
-              Card Title<i className="material-icons right">more_vert</i>
+              Obra<i className="material-icons right">more_vert</i>
             </span>
             <p>
-              <Link to="/perfil/">This is a link</Link>
+              <Link to="/perfil/">Ver mas &rarr;</Link>
             </p>
           </div>
           <div className="card-reveal">
             <span className="card-title grey-text text-darken-4">
-              Card Title<i className="material-icons right">close</i>
+              Obra<i className="material-icons right">close</i>
             </span>
             <p>
               Here is some more information about this product that is only
@@ -85,15 +85,15 @@ const Card = () => {
           </div>
           <div className="card-content">
             <span className="card-title activator grey-text text-darken-4">
-              Card Title<i className="material-icons right">more_vert</i>
+              Obra<i className="material-icons right">more_vert</i>
             </span>
             <p>
-              <Link to="/">This is a link</Link>
+              <Link to="/">Ver mas &rarr;</Link>
             </p>
           </div>
           <div className="card-reveal">
             <span className="card-title grey-text text-darken-4">
-              Card Title<i className="material-icons right">close</i>
+              Obra<i className="material-icons right">close</i>
             </span>
             <p>
               Here is some more information about this product that is only
@@ -108,15 +108,15 @@ const Card = () => {
           </div>
           <div className="card-content">
             <span className="card-title activator grey-text text-darken-4">
-              Card Title<i className="material-icons right">more_vert</i>
+              Obra<i className="material-icons right">more_vert</i>
             </span>
             <p>
-              <Link to="/">This is a link</Link>
+              <Link to="/">Ver mas &rarr;</Link>
             </p>
           </div>
           <div className="card-reveal">
             <span className="card-title grey-text text-darken-4">
-              Card Title<i className="material-icons right">close</i>
+              Obra<i className="material-icons right">close</i>
             </span>
             <p>
               Here is some more information about this product that is only
@@ -131,15 +131,15 @@ const Card = () => {
           </div>
           <div className="card-content">
             <span className="card-title activator grey-text text-darken-4">
-              Card Title<i className="material-icons right">more_vert</i>
+              Obra<i className="material-icons right">more_vert</i>
             </span>
             <p>
-              <Link to="/">This is a link</Link>
+              <Link to="/">Ver mas &rarr;</Link>
             </p>
           </div>
           <div className="card-reveal">
             <span className="card-title grey-text text-darken-4">
-              Card Title<i className="material-icons right">close</i>
+              Obra<i className="material-icons right">close</i>
             </span>
             <p>
               Here is some more information about this product that is only

@@ -4,11 +4,19 @@
   margin-top: 1em;
   transform: translateX(5em);
 
-  & > button {
+  & > span > p {
+    color: #000;
+    font-size: 0.85em;
+    position: absolute;
+    margin-top: 3em;
+  }
+
+  & > a > img {
     width: 9em;
     height: 5.25em;
-    font-size: 0.85rem;
     margin: 1em;
+    border-radius: 5px;
+    text-decoration: none;
     cursor: pointer;
   }
 }
@@ -23,10 +31,23 @@
 
 .chart-container {
   display: flex;
-  text-align: center;
   justify-content: center;
-  position: relative;
+  transform: translateX(7em);
   height: 30vh;
   width: 65vw;
   margin-top: 1em;
+
+  @media (min-width: 300px) and (max-width: 719px) {
+    flex-direction: column;
+    margin-top: 4rem;
+    transform: translateX(0em);
+  }
+}
+
+.sapal-opacity {
+  width: 200px;
+  height: 90px;
+  transform: translateX(35rem) translateY(10rem);
+  z-index: 1;
+  filter: opacity(0.3);
 }

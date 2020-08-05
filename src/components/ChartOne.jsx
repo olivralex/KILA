@@ -1,6 +1,10 @@
 import React, { useEffect } from "react"
+import { Link } from "@reach/router"
 import "../styles/App.scss"
 import Chart from "chart.js"
+import sapal from "../static/sapal.png"
+import sierraOne from "../static/sierra-1.jpg"
+import sierraTwo from "../static/sierra-2.jpg"
 // Components (.jsx) ./components
 
 const ChartOne = () => {
@@ -24,7 +28,7 @@ const ChartOne = () => {
         ],
         datasets: [
           {
-            label: "Campos",
+            label: "Valor",
             data: [80, 80, 40, 40, 0, 0, 40, 80, 100],
             backgroundColor: [
               "rgba(71, 164, 207, 0.85)",
@@ -81,9 +85,16 @@ const ChartOne = () => {
       <h3 className="chart-title">Cumplimiento Semanal por Factores</h3>
       <div className="chart-container">
         <div className="buttons">
-          <button>Notas de Cumplimiento</button>
-          <button>Notas de Incumplimiento</button>
+          <Link to="/">
+            <span>Notas de Cumplimiento</span>
+            <img src={sierraOne} alt="notas de cumplimiento" />
+          </Link>
+          <Link to="/">
+            <span>Notas de Incumplimiento</span>
+            <img src={sierraTwo} alt="notas de incumplimiento" />
+          </Link>
         </div>
+        <img className="sapal-opacity" src={sapal} alt="sapal logo" />
         <canvas id="myChart"></canvas>
       </div>
     </div>
