@@ -1,5 +1,6 @@
 // Pages (Profile, Form, About, etc.)
 @import "./pages/profilebox";
+@import "./pages/compliance";
 // Layout (Navbar, Sidebar, Header, etc.)
 @import "./layout/header";
 @import "./layout/footer";
@@ -7,6 +8,7 @@
 @import "./components/search";
 @import "./components/card";
 @import "./components/chartone";
+@import "./components/charttwo";
 
 body {
   font-family: Arial, sans-serif;

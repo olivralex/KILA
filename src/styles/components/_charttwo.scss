@@ -1,6 +1,6 @@
 @import "../abstracts/variables";
 
-.elements {
+.elements-2 {
   display: flex;
   justify-content: center;
   width: 80%;
@@ -11,7 +11,7 @@
   }
 }
 
-.buttons {
+.buttons-2 {
   margin-top: 4em;
   transform: translateX(5em);
   display: flex;
@@ -59,50 +59,59 @@
   }
 }
 
-.chart-title {
+.chart-title-2 {
   display: flex;
   justify-content: center;
-  margin-top: 6em;
+  margin-top: 15em;
   font-size: 1.35em;
   color: $titles-gray;
   transform: translateX(4%);
 
   // Media Queries
   @media (min-width: 1281px) {
-    margin-top: 10em;
+    margin-top: 19em;
   }
 
   @media (min-width: 769px) and (max-width: 1024px) {
     transform: translateX(7%);
     font-size: 1.25em;
   }
+  //Media Query
+  @media (min-width: 376px) and (max-width: 768px) {
+    margin-top: 2rem;
+  }
+
+  //Media Query
+  @media (min-width: 250px) and (max-width: 375px) {
+    margin-top: 2em;
+  }
 }
 
-.chart-container {
+.chart-container-2 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  transform: translateX(3em);
+  transform: translateX(13%);
   height: 40vh;
   width: 85%;
   margin-top: 1em;
   //Media Query
   @media (min-width: 376px) and (max-width: 768px) {
     flex-direction: row;
-    transform: translateX(-5em);
+    transform: translateX(-1em);
     margin-top: 1rem;
-    width: 32em;
+    width: 28em;
   }
   //Media Query
   @media (min-width: 250px) and (max-width: 375px) {
     flex-direction: row;
-    transform: translateX(-5.5em);
+    transform: translateX(-1em);
     margin-top: 1rem;
-    width: 29em;
+    width: 24em;
   }
 }
 
-.sapal-opacity {
+.sapal-opacity-2 {
   width: 200px;
   height: 90px;
   z-index: 1;

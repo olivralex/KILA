@@ -6,6 +6,7 @@ import profile from "../static/construction.jpg"
 import Header from "../components/Header.jsx"
 import Footer from "../components/Footer.jsx"
 import ChartOne from "../components/ChartOne.jsx"
+import ChartTwo from "../components/ChartTwo.jsx"
 
 const ProfileImg = () => {
   return (
@@ -64,6 +65,7 @@ const Profile = () => {
       <ProfileBox />
       {/* Primer Gráfica */}
       <ChartOne />
+      <ChartTwo />
       <Footer />
     </>
   )

@@ -6,6 +6,7 @@ import "./styles/App.scss"
 import Form from "./pages/Form"
 import Home from "./pages/Home"
 import Profile from "./pages/Profile"
+import Compliance from "./pages/Compliance"
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
       <Router>
         <Home path="/" />
         <Profile path="perfil" />
+        <Compliance path="notas" />
       </Router>
     </div>
   )
