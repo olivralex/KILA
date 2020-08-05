@@ -1,53 +1,104 @@
 @import "../abstracts/variables";
 
-.buttons {
-  margin-top: 1em;
-  transform: translateX(5em);
-
-  & > span > p {
-    color: #000;
-    font-size: 0.85em;
-    position: absolute;
-    margin-top: 3em;
+.elements {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  transform: translateX(1em);
+  //Media Query
+  @media (min-width: 300px) and (max-width: 768px) {
+    flex-direction: column;
   }
+}
 
-  & > a > img {
-    width: 9em;
-    height: 5.25em;
-    margin: 1em;
-    border-radius: 5px;
+.buttons {
+  margin-top: 4em;
+  transform: translateX(5em);
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+
+  & > a {
     text-decoration: none;
+    color: #fff;
+    font-weight: 600;
     cursor: pointer;
+
+    &:hover {
+      filter: opacity(0.65);
+      transition: all 0.15s ease-in-out;
+    }
+
+    & > span {
+      font-size: 1em;
+      position: absolute;
+      text-align: center;
+      margin-top: 2em;
+      z-index: 1;
+
+      //Media Query
+      @media (min-width: 300px) and (max-width: 768px) {
+        font-size: 1em;
+      }
+    }
+
+    & > img {
+      width: 9em;
+      height: 5.25em;
+      margin: 1em;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+  }
+  //Media Query
+  @media (min-width: 300px) and (max-width: 768px) {
+    flex-direction: row;
+    margin-top: 1rem;
+    transform: translateX(2em);
+    justify-content: center;
   }
 }
 
 .chart-title {
   display: flex;
   justify-content: center;
-  margin-top: 3.5em;
+  margin-top: 4em;
   font-size: 1.35em;
   color: $titles-gray;
+
+  @media (min-width: 769px) and (max-width: 1024px) {
+    transform: translateX(7%);
+    font-size: 1.25em;
+  }
 }
 
 .chart-container {
   display: flex;
-  justify-content: center;
-  transform: translateX(7em);
-  height: 30vh;
-  width: 65vw;
+  flex-direction: column;
+  justify-content: space-between;
+  transform: translateX(1em);
+  height: 40vh;
+  width: 85%;
   margin-top: 1em;
-
-  @media (min-width: 300px) and (max-width: 719px) {
-    flex-direction: column;
-    margin-top: 4rem;
-    transform: translateX(0em);
+  //Media Query
+  @media (min-width: 376px) and (max-width: 768px) {
+    flex-direction: row;
+    transform: translateX(-5em);
+    margin-top: 1rem;
+    width: 32em;
+  }
+  //Media Query
+  @media (min-width: 250px) and (max-width: 375px) {
+    flex-direction: row;
+    transform: translateX(-5.5em);
+    margin-top: 1rem;
+    width: 29em;
   }
 }
 
 .sapal-opacity {
   width: 200px;
   height: 90px;
-  transform: translateX(35rem) translateY(10rem);
   z-index: 1;
   filter: opacity(0.3);
 }

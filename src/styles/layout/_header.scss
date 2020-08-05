@@ -6,11 +6,21 @@
   overflow: hidden;
   justify-content: space-between;
   padding: 16px;
+
+  //Media Query
+  @media (min-width: 300px) and (max-width: 768px) {
+    padding: 18px;
+  }
 }
 
 .hamburger {
   margin-top: 1.1em;
   float: left;
+
+  //Media Query
+  @media (min-width: 300px) and (max-width: 768px) {
+    margin-top: 0.85em;
+  }
 }
 
 i {
@@ -27,12 +37,24 @@ i:hover {
   width: 145px;
   height: 60px;
   margin-left: 1.1em;
+
+  //Media Query
+  @media (min-width: 300px) and (max-width: 768px) {
+    width: 125px;
+    height: 50px;
+  }
 }
 
 .sapal {
   width: 145px;
   height: 70px;
   margin-right: 2em;
+
+  @media (min-width: 300px) and (max-width: 768px) {
+    width: 125px;
+    height: 50px;
+    margin-right: 1em;
+  }
 }
 
 // Sticky header styling

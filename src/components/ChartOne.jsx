@@ -81,9 +81,9 @@ const ChartOne = () => {
   }, [])
 
   return (
-    <div>
+    <>
       <h3 className="chart-title">Cumplimiento Semanal por Factores</h3>
-      <div className="chart-container">
+      <div className="elements">
         <div className="buttons">
           <Link to="/">
             <span>Notas de Cumplimiento</span>
@@ -94,10 +94,12 @@ const ChartOne = () => {
             <img src={sierraTwo} alt="notas de incumplimiento" />
           </Link>
         </div>
-        <img className="sapal-opacity" src={sapal} alt="sapal logo" />
-        <canvas id="myChart"></canvas>
+        <div className="chart-container">
+          {/* <img className="sapal-opacity" src={sapal} alt="sapal logo" /> */}
+          <canvas id="myChart"></canvas>
+        </div>
       </div>
-    </div>
+    </>
   )
 }
 
