@@ -1,5 +1,4 @@
-import React from "react"
-import { Link } from "@reach/router"
+import React, { useState } from "react"
 import "../styles/App.scss"
 import profile from "../static/construction.jpg"
 //Components
@@ -56,15 +55,27 @@ const ProfileBox = () => {
 }
 
 const Profile = () => {
+  const [chart] = useState([
+    {
+      label: "Semana 1",
+      data: [80, 80, 40, 40, 0, 0, 40, 80, 100],
+    },
+    {
+      label: "Semana 3",
+      data: [30, 70, 50, 70, 10, 0, 50, 75, 90],
+    },
+  ])
+
   return (
     <>
-      <Header />
+      <Header data={chart} />
       {/* Inicio del perfil | Datos Iniciales */}
       <h1>Nombre de la Empresa | Nombre de la Obra</h1>
       <ProfileImg />
       <ProfileBox />
       {/* Primer Gráfica */}
-      <ChartOne />
+      <ChartOne draw={chart} />
+      {/* Segunda Gráfica */}
       <ChartTwo />
       <Footer />
     </>

@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "react"
+import React, { useEffect } from "react"
 import "../styles/App.scss"
 import { Link } from "@reach/router"
 import M from "materialize-css"
-import Sidenav from "./Sidenav"
+import HomeSideNav from "./HomeSideNav"
 import sapal from "../static/sapal.png"
 import kila from "../static/kila.png"
 
@@ -14,9 +14,7 @@ const Img = ({ source, styling }) => {
   )
 }
 
-const Header = props => {
-  const [weeks, setWeeks] = useState([1, 2, 3, 4, 5])
-
+const Header = () => {
   //Sidenav Function
   const sidenav = () => {
     let elems = document.querySelectorAll(".sidenav")
@@ -65,7 +63,7 @@ const Header = props => {
         </div>
         <Img styling={"sapal"} source={{ src: sapal, alt: "sapal" }} />
       </div>
-      <Sidenav data={props.data} weeks={weeks} />
+      <HomeSideNav />
     </>
   )
 }

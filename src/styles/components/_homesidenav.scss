@@ -1,0 +1,64 @@
+@import "../abstracts/variables";
+
+.user-img {
+  display: flex;
+}
+
+.kila-logo {
+  width: 135px;
+  height: 55px;
+  margin-left: 1em;
+}
+
+.usuario {
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+.obra {
+  margin-top: -0.65em;
+}
+
+.contract {
+  display: flex;
+  margin-left: 1em;
+
+  & > i {
+    margin: 10px;
+  }
+}
+
+.goto {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  transform: translateY(6em);
+  color: $kila-green;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.75;
+    transition: all 0.15s linear;
+  }
+}
+
+.logout {
+  display: flex;
+  justify-content: center;
+  margin-right: 1.75em;
+  text-decoration: none;
+  transform: translateY(7em);
+  color: $cool-red;
+  cursor: pointer;
+
+  & > i {
+    margin: 10px;
+    color: $cool-red;
+  }
+
+  &:hover {
+    opacity: 0.75;
+    transition: all 0.15s linear;
+  }
+}

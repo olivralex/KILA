@@ -6,14 +6,18 @@
   justify-content: center;
   border-radius: 20px;
   border: solid 1px rgb(223, 225, 229);
+
+  @media (min-width: 300px) and (max-width: 768px) {
+    width: 80%;
+  }
 }
 
 .container:hover {
   border: none;
   transition: all 0.2s linear;
-  -webkit-box-shadow: 16px 14px 48px -12px rgba(0, 0, 0, 0.475);
-  -moz-box-shadow: 16px 14px 48px -12px rgba(0, 0, 0, 0.475);
-  box-shadow: 16px 14px 48px -12px rgba(0, 0, 0, 0.475);
+  -webkit-box-shadow: 16px 14px 48px -12px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 16px 14px 48px -12px rgba(0, 0, 0, 0.35);
+  box-shadow: 16px 14px 48px -12px rgba(0, 0, 0, 0.35);
 }
 
 textarea {

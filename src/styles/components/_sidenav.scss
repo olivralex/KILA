@@ -1,0 +1,114 @@
+@import "../abstracts/variables";
+
+.user-img {
+  display: flex;
+}
+
+.kila-logo {
+  width: 135px;
+  height: 55px;
+  margin-left: 1em;
+}
+
+.usuario {
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+.obra {
+  margin-top: -0.65em;
+}
+
+.contract {
+  display: flex;
+  margin-left: 1em;
+
+  & > i {
+    margin: 10px;
+  }
+}
+
+.options-1 {
+  font-size: 1.15em;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  margin-top: 1em;
+  transform: translateX(2em);
+
+  &:hover {
+    color: $cool-blue;
+    transition: all 0.15s linear;
+    background-color: transparent;
+  }
+
+  &:focus {
+    outline: none;
+    border: none;
+    background-color: transparent;
+  }
+
+  &:active {
+    outline: none;
+    border: none;
+    background-color: transparent;
+  }
+}
+
+.options-2 {
+  font-size: 1.15em;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  margin-top: 1em;
+  transform: translateX(2em);
+
+  &:hover {
+    color: $cool-red;
+    transition: all 0.15s linear;
+    background-color: transparent;
+  }
+
+  &:focus {
+    outline: none;
+    border: none;
+    background-color: transparent;
+  }
+
+  &:active {
+    outline: none;
+    border: none;
+    background-color: transparent;
+  }
+}
+
+.weeks {
+  display: flex;
+  margin-left: 1em;
+  font-size: 2em;
+}
+
+.logout {
+  display: flex;
+  justify-content: center;
+  margin-right: 1.75em;
+  transform: translateY(10em);
+  color: $cool-red;
+  cursor: pointer;
+
+  & > i {
+    margin: 10px;
+    color: $cool-red;
+  }
+
+  &:hover {
+    opacity: 0.75;
+    transition: all 0.15s linear;
+  }
+}

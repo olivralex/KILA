@@ -4,9 +4,9 @@ import App from "./App"
 
 const Global = () => {
   return (
-    <React.StrictMode>
+    <React.Fragment>
       <App />
-    </React.StrictMode>
+    </React.Fragment>
   )
 }
 

@@ -7,7 +7,7 @@ import sierraOne from "../static/sierra-1.jpg"
 import sierraTwo from "../static/sierra-2.jpg"
 // Components (.jsx) ./components
 
-const ChartOne = () => {
+const ChartOne = props => {
   useEffect(() => {
     let ctx = document.getElementById("myChart")
     ctx.height = 95
@@ -28,8 +28,8 @@ const ChartOne = () => {
         ],
         datasets: [
           {
-            label: "Valor",
-            data: [80, 80, 40, 40, 0, 0, 40, 80, 100],
+            label: props.draw[0].label,
+            data: props.draw[0].data,
             backgroundColor: [
               "rgba(71, 164, 207, 0.85)",
               "rgba(71, 164, 207, 0.85)",
@@ -67,7 +67,7 @@ const ChartOne = () => {
           yAxes: [
             {
               ticks: {
-                //Incluye el simbolo del porcentaje
+                //Incluye el símbolo del porcentaje
                 callback: function (value, index, values) {
                   return value + "%"
                 },
@@ -78,7 +78,7 @@ const ChartOne = () => {
         },
       },
     })
-  }, [])
+  }, [props])
 
   return (
     <>

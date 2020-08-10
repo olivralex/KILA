@@ -2,16 +2,15 @@
 
 footer {
   width: 100%;
-  margin-top: 15rem;
-  position: absolute;
   font-size: 1.25em;
+  margin-top: 53vh;
   //Media Query
   @media (min-width: 376px) and (max-width: 768px) {
-    margin-top: 4rem;
+    margin-top: 35vh;
   }
   //Media Query
   @media (min-width: 250px) and (max-width: 375px) {
-    margin-top: 4rem;
+    margin-top: 45vh;
   }
 }
 

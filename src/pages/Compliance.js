@@ -25,6 +25,7 @@ const Compliance = () => {
       <Header />
       {/* Notas de Cumplimiento */}
       <div className="note-compliance">
+        <h1> Nombre de la Obra </h1>
         <h1>Notas de Cumplimiento</h1>
         <div className="note-container">
           <ul>

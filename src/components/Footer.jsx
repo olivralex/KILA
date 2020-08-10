@@ -7,7 +7,7 @@ const Footer = () => {
       <small>
         ©2020 Kila Environmental Services{" "}
         <span role="img" aria-label="tree">
-          🌳
+          &nbsp;🌳
         </span>
       </small>
       <div className="stripe"></div>
