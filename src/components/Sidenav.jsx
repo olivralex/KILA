@@ -45,7 +45,7 @@ const Sidenav = props => {
   }
 
   return (
-    <>
+    <div>
       <ul id="slide-out" className="sidenav">
         <li>
           <div className="user-view">
@@ -124,10 +124,7 @@ const Sidenav = props => {
           </span>
         </li>
       </ul>
-      <a href="#!" data-target="slide-out" className="sidenav-trigger">
-        <i className="material-icons">menu</i>
-      </a>
-    </>
+    </div>
   )
 }
 

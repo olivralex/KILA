@@ -59,9 +59,6 @@ const HomeSideNav = () => {
           </span>
         </li>
       </ul>
-      <a href="#!" data-target="slide-out" className="sidenav-trigger">
-        <i className="material-icons">menu</i>
-      </a>
     </div>
   )
 }

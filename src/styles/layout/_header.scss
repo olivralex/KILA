@@ -34,8 +34,8 @@ i:hover {
 }
 
 .kila {
-  width: 145px;
-  height: 60px;
+  width: 155px;
+  height: 65px;
   margin-left: 1.1em;
 
   //Media Query
@@ -46,8 +46,8 @@ i:hover {
 }
 
 .sapal {
-  width: 145px;
-  height: 70px;
+  width: 155px;
+  height: 75px;
   margin-right: 2em;
 
   @media (min-width: 300px) and (max-width: 768px) {
@@ -58,12 +58,16 @@ i:hover {
 }
 
 // Sticky header styling
+.content {
+  padding-top: 16px;
+}
+
 .sticky {
   position: fixed;
   top: 0;
   width: 100%;
 }
 
-.sticky + .header {
-  padding: 60px;
+.sticky + .content {
+  padding-top: 5rem;
 }

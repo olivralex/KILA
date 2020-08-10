@@ -9,7 +9,7 @@ const Search = props => {
         type="text"
         value={props.inputValue}
         onChange={props.cardFilter}
-        placeholder=" Buscar ej. Nombre de la Empresa"
+        placeholder=" Buscar ej. Nombre de la Obra"
       />
       <a href="#!">
         <MdSearch className="search" size={30} />

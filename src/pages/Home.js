@@ -18,7 +18,7 @@ const Home = () => {
       "Obra nueva en la ciudad de León",
       "Otra constructora de S.A de C.V",
       "Obra nueva en Guanajuato",
-      "Obra tres en Guatulcos",
+      "Obra tres en Guanajuato",
       "Constructora Benavides S.A.",
       "Constructora Álvaro Obregón",
       "Constructora REMEX S.A. de C.V.",

@@ -70,7 +70,7 @@ const Profile = () => {
     <>
       <Header data={chart} />
       {/* Inicio del perfil | Datos Iniciales */}
-      <h1>Nombre de la Empresa | Nombre de la Obra</h1>
+      <h1>Nombre de la Empresa u Obra</h1>
       <ProfileImg />
       <ProfileBox />
       {/* Primer Gráfica */}
